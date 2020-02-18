@@ -23,6 +23,5 @@ Route::middleware('web', 'auth')
         // Stopping impersonate
         Route::get($domainParam.'/user/impersonate/stop', 'ImpersonateController@stop')
             ->defaults('module', 'user')
-            ->middleware('uccello.permissions:admin')
             ->name('stop');
     });
