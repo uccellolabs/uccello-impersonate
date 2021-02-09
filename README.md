@@ -12,7 +12,7 @@ Create a file located at `resources/views/uccello/modules/user/detail/main.blade
 ```html
 @extends('uccello::modules.default.detail.main')
 
-@section('top-action-buttons')
+@section('custom-top-action-buttons')
     @include('impersonate::button')
 @append
 ```
